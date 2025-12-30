@@ -1,0 +1,95 @@
+{
+  "nodes": {
+    "altacv": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1753881428,
+        "narHash": "sha256-fRnElZqCN4hbjdyjjhxNTvKLwSzJf6WnaQDEFl5pGW4=",
+        "owner": "liantze",
+        "repo": "AltaCV",
+        "rev": "91373530c55843533a4de12a29d28896f9b14c0d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "liantze",
+        "repo": "AltaCV",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "luacats-tex-luatex": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1766152552,
+        "narHash": "sha256-EmdaesImq93WiQyaM5Bo1NqLQP+I2fJNgReIJ6VDLsk=",
+        "owner": "LuaCATS",
+        "repo": "tex-luatex",
+        "rev": "b8efbe933a70e2f79afd02aeddc3ad2de24e6e5c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LuaCATS",
+        "repo": "tex-luatex",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1767026758,
+        "narHash": "sha256-7fsac/f7nh/VaKJ/qm3I338+wAJa/3J57cOGpXi0Sbg=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "346dd96ad74dc4457a9db9de4f4f57dab2e5731d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "altacv": "altacv",
+        "flake-utils": "flake-utils",
+        "luacats-tex-luatex": "luacats-tex-luatex",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

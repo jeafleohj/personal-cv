@@ -1,0 +1,7 @@
+{
+  "Lua.workspace.library": [
+    "src/lua",
+    ".luacats/tex-luatex"
+  ],
+  "Lua.runtime.version": "Lua 5.4"
+}
