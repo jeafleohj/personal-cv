@@ -55,8 +55,8 @@
               cp ${name}.pdf $out/
             '';
           };
-        cvEn = buildCv "cv-en" "en";
-        cvEs = buildCv "cv-es" "es";
+        cvEn = buildCv "jhonyangulof-en" "en";
+        cvEs = buildCv "jhonyangulof-es" "es";
       in
       {
         packages = {
@@ -79,8 +79,8 @@
                 set -euo pipefail
                 out_path="$(nix build --impure --no-link --print-out-paths "${self}#cv-en-pdf")"
                 mkdir -p dist
-                cp -f "$out_path"/cv-en.pdf dist/cv-en.pdf
-                echo "Wrote dist/cv-en.pdf"
+                cp -f "$out_path"/jhonyangulof-en.pdf dist/jhonyangulof-en.pdf
+                echo "Wrote dist/jhonyangulof-en.pdf"
               '';
             };
           };
@@ -92,8 +92,8 @@
                 set -euo pipefail
                 out_path="$(nix build --impure --no-link --print-out-paths "${self}#cv-es-pdf")"
                 mkdir -p dist
-                cp -f "$out_path"/cv-es.pdf dist/cv-es.pdf
-                echo "Wrote dist/cv-es.pdf"
+                cp -f "$out_path"/jhonyangulof-es.pdf dist/jhonyangulof-es.pdf
+                echo "Wrote dist/jhonyangulof-es.pdf"
               '';
             };
           };
