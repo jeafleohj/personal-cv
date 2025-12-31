@@ -26,27 +26,33 @@ local work_experience_entry = {
     details = {
       {
         en =
-        "Architecture and development of the backend in TypeScript, integrating tRPC for efficient client-server communication and using Hono as a lightweight, high-performance framework.",
+        "Backend architecture ownership in TypeScript, defining API contracts with tRPC and selecting a low-overhead, scalable stack.",
         es =
-        "Arquitectura y desarrollo del backend en TypeScript, integrando tRPC para comunicación eficiente entre cliente y servidor y usando Hono como framework ligero y de alto rendimiento.",
+        "Diseño y ownership de la arquitectura backend en TypeScript, definiendo contratos de API con tRPC y seleccionando un stack orientado a bajo overhead y escalabilidad.",
       },
       {
         en =
-        "Implementation of middleware and authentication/authorization systems in tRPC, ensuring access control with JWT (jose) and cookie handling.",
+        "Definition and implementation of platform-level authentication and authorization mechanisms (JWT, cookies), with direct ownership of security and access control.",
         es =
-        "Implementación de middleware y sistemas de autenticación/autorización en tRPC, asegurando el control de accesos con JWT (jose) y manejo de cookies.",
+        "Definición e implementación de mecanismos de autenticación y autorización a nivel de plataforma (JWT, cookies), con responsabilidad directa sobre seguridad y control de accesos.",
       },
       {
         en =
-        "Design of a non-relational database in DynamoDB using the Single Table Design pattern to maximize efficiency and scalability.",
+        "DynamoDB data model design using Single Table Design, based on access patterns and schema decisions focused on scalability and operational efficiency.",
         es =
-        "Diseño de base de datos no relacional en DynamoDB con el patrón Single Table Design para maximizar eficiencia y escalabilidad.",
+        "Diseño del modelo de datos en DynamoDB utilizando Single Table Design, basado en access patterns y decisiones de esquema orientadas a escalabilidad y eficiencia operativa.",
       },
       {
         en =
-        "Coordination with the business team to adjust the product proposal to client requirements and ensure technical alignment.",
+        "Implementation of event-driven flows with DynamoDB Streams, indexing and search in OpenSearch to support efficient queries and eventual consistency.",
         es =
-        "Coordinación con el equipo de negocios para ajustar la propuesta del producto a los requerimientos del cliente y asegurar alineación técnica.",
+        "Implementación de flujos event-driven mediante DynamoDB Streams, con indexación y búsqueda en OpenSearch para soportar consultas eficientes y consistencia eventual.",
+      },
+      {
+        en =
+        "Go tooling for webhook ingestion and validation, improving observability, reliability, and traceability of external integrations.",
+        es =
+        "Desarrollo de tooling en Go para consumo y validación de webhooks, mejorando observabilidad, confiabilidad y trazabilidad de integraciones externas.",
       },
     },
   },
@@ -69,44 +75,22 @@ local work_experience_entry = {
     },
     details = {
       {
-        en = "Debugging of critical features to identify selected users within a reservation.",
-        es = "Depuración de funcionalidades críticas para discriminar a los usuarios seleccionados en una reserva.",
+        en =
+        "Evolution and maintenance of critical backend services, prioritizing data consistency and operational reliability.",
+        es =
+        "Evolución y mantenimiento de servicios backend críticos, priorizando consistencia de datos y confiabilidad operativa.",
       },
       {
         en =
-        "Modeling of MongoDB collections and development of transactional services to avoid collisions and ensure correct email deliveries.",
+        "Design and execution of MongoDB schema changes through controlled migrations, reducing deployment risk.",
         es =
-        "Modelado de colecciones en MongoDB y desarrollo de servicios con transacciones para evitar colisiones y asegurar envíos correctos.",
+        "Diseño y ejecución de cambios de esquema en MongoDB mediante migraciones controladas, reduciendo riesgo en despliegues.",
       },
       {
         en =
-        "Migrations with mongo-migrate to standardize collections when modifying schemas defined with Mongoose.",
+        "Development and deployment of serverless solutions in AWS (Lambda, S3) to automate document processing and internal workflows.",
         es =
-        "Migraciones con mongo-migrate para estandarizar colecciones al modificar esquemas definidos con Mongoose.",
-      },
-      {
-        en =
-        "Refactoring of functions and methods, with partial migration to TypeScript to improve scalability and ensure schema consistency.",
-        es =
-        "Refactorización de funciones y métodos, con migración parcial a TypeScript para mejorar la escalabilidad y asegurar la consistencia del esquema.",
-      },
-      {
-        en =
-        "Code review to ensure standards and best practices across backend and frontend teams (Vue/Nuxt).",
-        es =
-        "Revisión de código para asegurar estándares y mejores prácticas en equipos de backend y frontend (Vue/Nuxt).",
-      },
-      {
-        en =
-        "Development and deployment of an AWS Lambda function to automate PDF rendering and speed up document processing.",
-        es =
-        "Desarrollo y despliegue de una función en AWS Lambda para automatizar la renderización de PDF y agilizar el procesamiento de documentos.",
-      },
-      {
-        en =
-        "Adaptation of an AWS S3 file upload service to project requirements, improving functionality and data management.",
-        es =
-        "Adaptación de un servicio de carga de archivos en AWS S3 a los requisitos del proyecto, mejorando la funcionalidad y la gestión de datos.",
+        "Desarrollo y despliegue de soluciones serverless en AWS (Lambda, S3) para automatizar procesamiento de documentos y flujos internos.",
       },
     },
   },
@@ -129,24 +113,16 @@ local work_experience_entry = {
     },
     details = {
       {
-        en = "Maintenance of the web platform with Node.js and Laravel.",
-        es = "Mantenimiento de la plataforma web con Node.js y Laravel.",
+        en =
+        "Maintenance and evolution of backend services in Node.js and Laravel for production systems.",
+        es =
+        "Mantenimiento y evolución de servicios backend en Node.js y Laravel sobre sistemas productivos.",
       },
       {
         en =
-        "Development of services to generate Excel reports on sales transactions and warehouse stock.",
+        "Development of support services for reporting and management dashboards on MySQL.",
         es =
-        "Desarrollo de servicios para generar informes en Excel sobre transacciones de ventas y stock de productos en almacenes.",
-      },
-      {
-        en = "Development of services for a management dashboard in Node.js and MySQL.",
-        es = "Desarrollo de servicios para un tablero de gestión en Node.js y MySQL.",
-      },
-      {
-        en =
-        "Implementation of a base template with clean architecture for new platform services using Fastify.js and Awilix in TypeScript.",
-        es =
-        "Implementación de una plantilla base con arquitectura limpia para nuevos servicios de plataforma usando Fastify.js y Awilix en TypeScript.",
+        "Desarrollo de servicios de soporte para reporting y tableros de gestión sobre MySQL.",
       },
     }
   },
@@ -169,22 +145,16 @@ local work_experience_entry = {
     },
     details = {
       {
-        en = "Maintenance of the web platform with PHP Blade and Vue.js.",
-        es = "Mantenimiento de la plataforma web con PHP Blade y Vue.js.",
-      },
-      {
-        en = "Optimization of high-latency services.",
-        es = "Optimización de servicios con alta latencia.",
+        en =
+        "Maintenance and optimization of the web platform (PHP, Vue.js), addressing performance and latency issues in production.",
+        es =
+        "Mantenimiento y optimización de la plataforma web (PHP, Vue.js), abordando problemas de rendimiento y latencia en producción.",
       },
       {
         en =
-        "Correction of a critical vulnerability that allowed unauthorized access to restricted content.",
+        "Identification and correction of a critical authorization vulnerability that allowed unauthorized access to restricted content.",
         es =
-        "Corrección de una vulnerabilidad crítica que permitía acceso no autorizado a contenido restringido.",
-      },
-      {
-        en = "Implementation of new services with unit tests using PHPUnit.",
-        es = "Implementación de nuevos servicios con pruebas unitarias usando PHPUnit.",
+        "Identificación y corrección de una vulnerabilidad crítica de autorización que permitía acceso no autorizado a contenido restringido.",
       },
     }
   },
@@ -207,18 +177,10 @@ local work_experience_entry = {
     },
     details = {
       {
-        en = "Maintenance and development of services in Koa.js and Mongoose.",
-        es = "Mantenimiento y desarrollo de servicios en Koa.js y Mongoose.",
-      },
-      {
-        en = "Modeling of MongoDB collections for new platform features.",
-        es = "Modelado de colecciones en MongoDB para nuevas funcionalidades de la plataforma.",
-      },
-      {
         en =
-        "Development of a service to register photos and visit data in a web application.",
+        "Development and maintenance of backend services in Node.js (Koa) with MongoDB, along with implementation of web interfaces using Vue.js for platform features.",
         es =
-        "Desarrollo de un servicio para registrar fotos y datos de visitas en una aplicación web.",
+        "Desarrollo y mantenimiento de servicios backend en Node.js (Koa) con MongoDB, junto con implementación de interfaces web utilizando Vue.js para funcionalidades de la plataforma.",
       },
     }
   },

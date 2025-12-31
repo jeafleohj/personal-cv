@@ -47,8 +47,6 @@
 ---@field title LocalizedString -- Section title (e.g. "Technical Skills")
 ---@field categories SkillCategory[]
 
-
-
 ---@alias Section<T> { title: LocalizedString, entries: T[] }
 
 ---@class CvData
@@ -57,15 +55,3 @@
 ---@field language Section<LanguageEntry>
 ---@field interest Section<InterestEntry>
 ---@field skills SkillsSection
-
----@class CvLegacyData
----@field experience WorkExperienceEntry[]
----@field education_entry EducationEntry[]
----@field language_entry LanguageEntry[]
----@field interest_entry InterestEntry[]
----@field skills_section SkillsSection
-
--- ---@alias WorkExperienceSection Section<WorkExperienceEntry>
--- ---@alias EducationSection Section<EducationEntry>
--- ---@alias LanguageSection Section<LanguageEntry>
--- -- FIX: Miisng one-@alias Section Section<WorkExperienceEntry>

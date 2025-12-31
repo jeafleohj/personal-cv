@@ -33,9 +33,21 @@ local function wrap_in_braces(text)
   return "{" .. text .. "}"
 end
 
+---@param text string
+---@return string
+local function to_bold(text)
+  return "\\textbf" .. wrap_in_braces(text)
+end
+
+---@param text string
+---@return string
+local function to_italic(text)
+  return "\\textit" .. wrap_in_braces(text)
+end
+
 ---@param lang "en"|"es"
 ---@return LocalizedStringMapper
-function make_localizer(lang)
+local function make_localizer(lang)
   ---@type LocalizedStringMapper
   return function(value)
     return escape_latex(value[lang] or "")
@@ -117,7 +129,7 @@ end
 
 ---@param localizer fun(value: LocalizedString): string
 ---@return fun(section: Section<WorkExperienceEntry>): nil
-function make_render_work_experience_section(localizer)
+local function make_render_work_experience_section(localizer)
   local render_title = make_render_section_title(localizer)
   local render_work_experience_list = make_render_work_experience_list(localizer)
 
@@ -160,7 +172,7 @@ end
 
 ---@param localizer fun(value: LocalizedString): string
 ---@return fun(section: Section<EducationEntry>): nil
-function make_render_education_section(localizer)
+local function make_render_education_section(localizer)
   local render_title = make_render_section_title(localizer)
   local render_education_list = make_render_education_list(localizer)
   return function(section)
@@ -171,7 +183,7 @@ end
 
 ---@param localizer fun(value: LocalizedString): string
 ---@return fun(section: Section<LanguageEntry>): nil
-function make_render_language_section(localizer)
+local function make_render_language_section(localizer)
   local render_title = make_render_section_title(localizer)
   return function(section)
     render_title(section.title)
@@ -181,9 +193,9 @@ function make_render_language_section(localizer)
       local level = localizer(language.level)
       local description = language.description and localizer(language.description) or ""
       if description ~= "" then
-        items[i] = name .. ": " .. level .. " - " .. description
+        items[i] = to_bold(name) .. ": " .. level .. " - " .. description
       else
-        items[i] = name .. ": " .. level
+        items[i] = to_bold(name) .. ": " .. level
       end
     end
     render_plain_items(items)
@@ -192,7 +204,7 @@ end
 
 ---@param localizer fun(value: LocalizedString): string
 ---@return fun(section: Section<InterestEntry>): nil
-function make_render_interest_section(localizer)
+local function make_render_interest_section(localizer)
   local render_title = make_render_section_title(localizer)
   return function(section)
     render_title(section.title)
@@ -211,23 +223,27 @@ end
 
 ---@param localizer fun(value: LocalizedString): string
 ---@return fun(section: SkillsSection): nil
-function make_render_skills_section(localizer)
+local function make_render_skills_section(localizer)
   local render_title = make_render_section_title(localizer)
   return function(section)
     render_title(section.title)
-    for _, category in ipairs(section.categories) do
+    local length = #section.categories
+    for i, category in ipairs(section.categories) do
       tex.print("\\textbf" .. wrap_in_braces(localizer(category.name)))
       local items = {}
       for i, skill in ipairs(category.items) do
         local name = localizer(skill.name)
         local description = localizer(skill.description)
         if description ~= "" then
-          items[i] = name .. ": " .. description
+          items[i] = to_bold(name) .. ": " .. description
         else
           items[i] = name
         end
       end
       render_plain_items(items)
+      if i ~= length then
+        tex.print("\\divider\\newline")
+      end
     end
   end
 end
@@ -240,4 +256,6 @@ return {
   make_render_language_section = make_render_language_section,
   make_render_interest_section = make_render_interest_section,
   make_render_skills_section = make_render_skills_section,
+  to_bold = to_bold,
+  to_italic = to_italic,
 }

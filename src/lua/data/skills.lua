@@ -53,8 +53,18 @@ local skills_section = {
         },
         {
           name = {
-            en = "LaTeX",
-            es = "LaTeX",
+            en = "Go",
+            es = "Go",
+          },
+          description = {
+            en = "Building HTTP services with routing, request parsing, and structured logging.",
+            es = "Construcción de servicios HTTP con ruteo, parsing de requests y logging estructurado.",
+          },
+        },
+        {
+          name = {
+            en = "Latex",
+            es = "Latex",
           },
           description = {
             en = "Technical document authoring and layout.",
@@ -213,6 +223,46 @@ local skills_section = {
           description = {
             en = "Serverless functions for automation and on-demand processing.",
             es = "Funciones serverless para automatización y procesos por demanda.",
+          },
+        },
+        {
+          name = {
+            en = "DynamoDB",
+            es = "DynamoDB",
+          },
+          description = {
+            en = "NoSQL data modeling with Single Table Design.",
+            es = "Modelado NoSQL con Single Table Design.",
+          },
+        },
+        {
+          name = {
+            en = "DynamoDB Streams",
+            es = "DynamoDB Streams",
+          },
+          description = {
+            en = "Event stream for data change processing.",
+            es = "Flujo de eventos para procesamiento de cambios de datos.",
+          },
+        },
+        {
+          name = {
+            en = "KMS",
+            es = "KMS",
+          },
+          description = {
+            en = "Key management for encryption workflows.",
+            es = "Gestión de llaves para flujos de cifrado.",
+          },
+        },
+        {
+          name = {
+            en = "CloudWatch",
+            es = "CloudWatch",
+          },
+          description = {
+            en = "Logs and metrics for monitoring.",
+            es = "Logs y métricas para monitoreo.",
           },
         },
       },

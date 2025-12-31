@@ -20,8 +20,8 @@ local language_entry = {
       es = "Inglés",
     },
     level = {
-      en = "Intermediate (B1)",
-      es = "Intermedio (B1)",
+      en = "Intermediate",
+      es = "Intermedio",
     },
     description = {
       en = "Reading of technical documentation and listening comprehension in a software context; continuous learning.",
