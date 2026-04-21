@@ -289,8 +289,8 @@ local skills_section = {
             es = "Nix",
           },
           description = {
-            en = "Declarative environment and dependency management.",
-            es = "Gestión declarativa de entornos y dependencias.",
+            en = "Declarative environment and dependency management; open source contributions in nixpkgs (Codex) for build fixes and update workflow improvements with reviewer feedback.",
+            es = "Gestion declarativa de entornos y dependencias; contribuciones open source en nixpkgs (Codex) con fixes de compilacion y mejoras al flujo de actualizacion, iterando con feedback de reviewers.",
           },
         },
         {

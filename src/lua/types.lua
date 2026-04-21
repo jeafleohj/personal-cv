@@ -51,6 +51,7 @@
 
 ---@class CvData
 ---@field work_experience Section<WorkExperienceEntry>
+-- ---@field contributions Section<InterestEntry>
 ---@field education Section<EducationEntry>
 ---@field language Section<LanguageEntry>
 ---@field interest Section<InterestEntry>
