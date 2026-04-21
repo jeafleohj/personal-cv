@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "Personal CV";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -22,7 +22,6 @@
       nixpkgs,
       flake-utils,
       altacv,
-      luacats-tex-luatex,
     }:
     flake-utils.lib.eachDefaultSystem (
       system:
@@ -70,43 +69,8 @@
             ];
           };
         };
-        apps = {
-          export-cv-en = flake-utils.lib.mkApp {
-            drv = pkgs.writeShellApplication {
-              name = "export-cv-en";
-              runtimeInputs = [ pkgs.nix ];
-              text = ''
-                set -euo pipefail
-                out_path="$(nix build --impure --no-link --print-out-paths "${self}#cv-en-pdf")"
-                mkdir -p dist
-                cp -f "$out_path"/jhonyangulof-en.pdf dist/jhonyangulof-en.pdf
-                echo "Wrote dist/jhonyangulof-en.pdf"
-              '';
-            };
-          };
-          export-cv-es = flake-utils.lib.mkApp {
-            drv = pkgs.writeShellApplication {
-              name = "export-cv-es";
-              runtimeInputs = [ pkgs.nix ];
-              text = ''
-                set -euo pipefail
-                out_path="$(nix build --impure --no-link --print-out-paths "${self}#cv-es-pdf")"
-                mkdir -p dist
-                cp -f "$out_path"/jhonyangulof-es.pdf dist/jhonyangulof-es.pdf
-                echo "Wrote dist/jhonyangulof-es.pdf"
-              '';
-            };
-          };
-        };
         devShells.default = pkgs.mkShell {
-          packages = [
-            pkgs.emacs
-            tex
-          ];
-          shellHook = ''
-            mkdir -p .luacats
-            ln -sfn ${luacats-tex-luatex} .luacats/tex-luatex
-          '';
+          packages = [ pkgs.typst ];
         };
       }
     );
