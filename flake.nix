@@ -4,16 +4,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    luacats-tex-luatex = {
-      url = "github:LuaCATS/tex-luatex";
-      flake = false;
-    };
-    altacv = {
-      type = "github";
-      owner = "liantze";
-      repo = "AltaCV";
-      flake = false;
-    };
   };
 
   outputs =
@@ -21,14 +11,12 @@
       self,
       nixpkgs,
       flake-utils,
-      altacv,
     }:
     flake-utils.lib.eachDefaultSystem (
       system:
       let
         pkgs = import nixpkgs { inherit system; };
         cvPhone = builtins.getEnv "CV_PHONE";
-        tex = pkgs.texlive.combined.scheme-full;
         buildCv =
           name: lang:
           pkgs.stdenvNoCC.mkDerivation {
@@ -38,16 +26,11 @@
               path = ./.;
               name = "cv-source";
             };
-            nativeBuildInputs = [ tex ];
+            nativeBuildInputs = with pkgs; [ typst ];
             buildPhase = ''
-              export HOME="$TMPDIR"
-              export TEXMFVAR="$TMPDIR/texmf-var"
-              export TEXINPUTS="${altacv}//:$TEXINPUTS"
-              export SOURCE_DATE_EPOCH=1
-              export TZ=UTC
-              export CV_PHONE=${pkgs.lib.escapeShellArg cvPhone}
-              lualatex -interaction=nonstopmode -halt-on-error -file-line-error \
-                -jobname=${name} "\\def\\cvlang{${lang}}\\input{src/cv.tex}"
+              typst compile src/typst/cv.typ ${name}.pdf \
+                --input lang=${lang} \
+                --input phone=${pkgs.lib.escapeShellArg cvPhone}
             '';
             installPhase = ''
               mkdir -p $out
