@@ -32,7 +32,7 @@
         es: "Buenos Aires - Argentina",
       ),
       date: (
-        en: "Agosto 2018",
+        en: "August 2018",
         es: "Agosto 2018",
       ),
     ),

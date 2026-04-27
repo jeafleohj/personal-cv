@@ -62,8 +62,8 @@
         ),
         (
           name: (
-            en: "Latex",
-            es: "Latex",
+            en: "LaTeX",
+            es: "LaTeX",
           ),
           description: (
             en: "Technical document authoring and layout.",
@@ -90,8 +90,8 @@
       items: (
         (
           name: (
-            en: "KoaJs & Fastify",
-            es: "KoaJs & Fastify",
+            en: "Koa.js & Fastify",
+            es: "Koa.js & Fastify",
           ),
           description: (
             en: "Building efficient web servers and REST APIs with modern JavaScript frameworks.",
@@ -188,8 +188,8 @@
         ),
         (
           name: (
-            en: "Opensearch",
-            es: "Opensearch",
+            en: "OpenSearch",
+            es: "OpenSearch",
           ),
           description: (
             en: "Advanced search and efficient pagination; real-time indexing from DynamoDB.",
@@ -289,7 +289,7 @@
           ),
           description: (
             en: "Declarative environment and dependency management; open source contributions in nixpkgs (Codex) for build fixes and update workflow improvements with reviewer feedback.",
-            es: "Gestion declarativa de entornos y dependencias; contribuciones open source en nixpkgs (Codex) con fixes de compilacion y mejoras al flujo de actualizacion, iterando con feedback de reviewers.",
+            es: "Gestión declarativa de entornos y dependencias; contribuciones de código abierto en nixpkgs (Codex) con correcciones de compilación y mejoras al flujo de actualización, iterando con comentarios de revisores.",
           ),
         ),
         (
