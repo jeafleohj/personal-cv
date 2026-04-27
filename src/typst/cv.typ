@@ -33,16 +33,19 @@
 )
 
 #align(center)[
-  #text(size: 17pt, weight: "bold")[#personal.name]
+  #text(size: 15.5pt, weight: "bold")[#personal.name]
   #linebreak()
-  #text(size: 10.5pt)[#tr(personal.tagline)]
+  #text(size: 10pt)[#tr(personal.tagline)]
   #linebreak()
-  #text(size: 9.2pt)[
-    #link("mailto:" + personal.email)[#personal.email]
-    | #personal.phone
-    | #link("https://" + personal.github)[#cv.personal.github]
-    | #link("https://" + personal.linkedin)[#cv.personal.linkedin]
-    | #tr(personal.location)
+  #text(size: 8.8pt)[
+    #tr(personal.location) ·
+    #link("mailto:" + personal.email)[#personal.email] ·
+    #personal.phone
+  ]
+  #linebreak()
+  #text(size: 8.8pt)[
+    #link("https://" + personal.github)[GitHub: jeafleohj] ·
+    #link("https://" + personal.linkedin)[LinkedIn: jhony-angulo-fabian]
   ]
 ]
 

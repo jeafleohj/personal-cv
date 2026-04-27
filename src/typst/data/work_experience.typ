@@ -20,29 +20,29 @@
         es: companies.prestamype,
       ),
       location: (
-        en: "Lima - Peru",
-        es: "Lima - Perú",
+        en: "Lima, Peru",
+        es: "Lima, Perú",
       ),
       details: (
         (
-          en: "Backend architecture ownership in TypeScript, defining API contracts with tRPC and selecting a low-overhead, scalable stack.",
-          es: "Diseño y ownership de la arquitectura backend en TypeScript, definiendo contratos de API con tRPC y seleccionando un stack orientado a bajo overhead y escalabilidad.",
+          en: "Owned backend architecture in TypeScript, defined API contracts with tRPC, and selected a low-overhead, scalable stack.",
+          es: "Diseño y responsabilidad sobre la arquitectura backend en TypeScript, definiendo contratos de API con tRPC y seleccionando una arquitectura escalable y de baja sobrecarga.",
         ),
         (
-          en: "Definition and implementation of platform-level authentication and authorization mechanisms (JWT, cookies), with direct ownership of security and access control.",
+          en: "Defined and implemented platform-level authentication and authorization mechanisms (JWT, cookies), with direct ownership of security and access control.",
           es: "Definición e implementación de mecanismos de autenticación y autorización a nivel de plataforma (JWT, cookies), con responsabilidad directa sobre seguridad y control de accesos.",
         ),
         (
-          en: "DynamoDB data model design using Single Table Design, based on access patterns and schema decisions focused on scalability and operational efficiency.",
-          es: "Diseño del modelo de datos en DynamoDB utilizando Single Table Design, basado en access patterns y decisiones de esquema orientadas a escalabilidad y eficiencia operativa.",
+          en: "Designed DynamoDB data models using single-table design, based on access patterns and schema decisions focused on scalability and operational efficiency.",
+          es: "Diseño del modelo de datos en DynamoDB utilizando single-table design, basado en patrones de acceso y decisiones de esquema orientadas a escalabilidad y eficiencia operativa.",
         ),
         (
-          en: "Implementation of event-driven flows with DynamoDB Streams, indexing and search in OpenSearch to support efficient queries and eventual consistency.",
-          es: "Implementación de flujos event-driven mediante DynamoDB Streams, con indexación y búsqueda en OpenSearch para soportar consultas eficientes y consistencia eventual.",
+          en: "Implemented event-driven flows with DynamoDB Streams and OpenSearch indexing/search to support efficient queries and eventual consistency.",
+          es: "Implementación de flujos orientados a eventos mediante DynamoDB Streams, con indexación y búsqueda en OpenSearch para soportar consultas eficientes y consistencia eventual.",
         ),
         (
           en: "Go tooling for webhook ingestion and validation, improving observability, reliability, and traceability of external integrations.",
-          es: "Desarrollo de tooling en Go para consumo y validación de webhooks, mejorando observabilidad, confiabilidad y trazabilidad de integraciones externas.",
+          es: "Desarrollo de herramientas en Go para consumo y validación de webhooks, mejorando observabilidad, confiabilidad y trazabilidad de integraciones externas.",
         ),
       ),
     ),
@@ -56,8 +56,8 @@
         es: companies.prestamype,
       ),
       location: (
-        en: "Lima - Peru",
-        es: "Lima - Perú",
+        en: "Lima, Peru",
+        es: "Lima, Perú",
       ),
       date: (
         en: "November 2022 - January 2024",
@@ -74,7 +74,7 @@
         ),
         (
           en: "Development and deployment of serverless solutions in AWS (Lambda, S3) to automate document processing and internal workflows.",
-          es: "Desarrollo y despliegue de soluciones serverless en AWS (Lambda, S3) para automatizar procesamiento de documentos y flujos internos.",
+          es: "Desarrollo y despliegue de soluciones sin servidor en AWS (Lambda, S3) para automatizar procesamiento de documentos y flujos internos.",
         ),
       ),
     ),
@@ -92,8 +92,8 @@
         es: companies.tandia,
       ),
       location: (
-        en: "Lima - Peru",
-        es: "Lima - Perú",
+        en: "Lima, Peru",
+        es: "Lima, Perú",
       ),
       details: (
         (
@@ -102,14 +102,14 @@
         ),
         (
           en: "Development of support services for reporting and management dashboards on MySQL.",
-          es: "Desarrollo de servicios de soporte para reporting y tableros de gestión sobre MySQL.",
+          es: "Desarrollo de servicios de soporte para reportes y tableros de gestión sobre MySQL.",
         ),
       ),
     ),
     (
       job_title: (
-        en: "Fullstack Developer",
-        es: "Desarrollador Fullstack",
+        en: "Full Stack Developer",
+        es: "Desarrollador full stack",
       ),
       date: (
         en: "September 2021 - December 2021",
@@ -120,8 +120,8 @@
         es: companies.link_miners,
       ),
       location: (
-        en: "Lima - Peru",
-        es: "Lima - Perú",
+        en: "Lima, Peru",
+        es: "Lima, Perú",
       ),
       details: (
         (
@@ -148,8 +148,8 @@
         es: "Marzo 2020 - Junio 2020",
       ),
       location: (
-        en: "Lima - Peru",
-        es: "Lima - Perú",
+        en: "Lima, Peru",
+        es: "Lima, Perú",
       ),
       details: (
         (
@@ -172,8 +172,8 @@
         es: companies.prestamype,
       ),
       location: (
-        en: "Lima - Peru",
-        es: "Lima - Perú",
+        en: "Lima, Peru",
+        es: "Lima, Perú",
       ),
       details: (
         (
@@ -181,7 +181,7 @@
           es: "Mantenimiento e implementación de servicios con Node.js, jQuery y Vue.js.",
         ),
         (
-          en: "Design of a template with a monolithic architecture for the backend with Koa.js and Mongoose.",
+          en: "Designed a monolithic backend template using Koa.js and Mongoose.",
           es: "Diseño de una plantilla con arquitectura monolítica para el backend con Koa.js y Mongoose.",
         ),
       ),
@@ -197,4 +197,3 @@
     entries: work_experience_entry,
   )
 }
-

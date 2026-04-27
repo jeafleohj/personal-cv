@@ -36,7 +36,7 @@
             es: "Python",
           ),
           description: (
-            en: "Scripting and automation; data analysis with Pandas and basic machine learning notions.",
+            en: "Scripting and automation; data analysis with Pandas and basic machine learning concepts.",
             es: "Scripting y automatización; análisis de datos con Pandas y nociones de aprendizaje automático.",
           ),
         ),
@@ -57,7 +57,7 @@
           ),
           description: (
             en: "Building HTTP services with routing, request parsing, and structured logging.",
-            es: "Construcción de servicios HTTP con ruteo, parsing de requests y logging estructurado.",
+            es: "Construcción de servicios HTTP con enrutamiento, análisis de solicitudes y registro estructurado.",
           ),
         ),
         (
@@ -182,8 +182,8 @@
             es: "DynamoDB",
           ),
           description: (
-            en: "High-performance design with Single Table Design and Global Secondary Indexes (GSI).",
-            es: "Diseño para alto rendimiento con Single Table Design y Global Secondary Indexes (GSI).",
+            en: "High-performance design with single-table design and global secondary indexes (GSIs).",
+            es: "Diseño para alto rendimiento con single-table design e índices secundarios globales (GSIs).",
           ),
         ),
         (
@@ -221,7 +221,7 @@
           ),
           description: (
             en: "Serverless functions for automation and on-demand processing.",
-            es: "Funciones serverless para automatización y procesos por demanda.",
+            es: "Funciones sin servidor para automatización y procesos por demanda.",
           ),
         ),
         (
@@ -261,7 +261,7 @@
           ),
           description: (
             en: "Logs and metrics for monitoring.",
-            es: "Logs y métricas para monitoreo.",
+            es: "Registros y métricas para monitoreo.",
           ),
         ),
       ),

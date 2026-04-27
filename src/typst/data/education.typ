@@ -2,7 +2,7 @@
   let education_entry = (
     (
       degree: (
-        en: "Bachelor in Computer Science",
+        en: "Bachelor's Degree in Computer Science",
         es: "Bachiller en Ciencias de la Computación",
       ),
       institution: (
@@ -10,8 +10,8 @@
         es: "UTEC - Universidad de Ingeniería y Tecnología",
       ),
       location: (
-        en: "Lima - Peru",
-        es: "Lima - Perú",
+        en: "Lima, Peru",
+        es: "Lima, Perú",
       ),
       date: (
         en: "March 2017 - July 2022",
@@ -28,8 +28,8 @@
         es: "Universidad de Buenos Aires",
       ),
       location: (
-        en: "Buenos Aires - Argentina",
-        es: "Buenos Aires - Argentina",
+        en: "Buenos Aires, Argentina",
+        es: "Buenos Aires, Argentina",
       ),
       date: (
         en: "August 2018",

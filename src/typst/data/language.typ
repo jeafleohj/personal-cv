@@ -24,7 +24,7 @@
         es: "Intermedio",
       ),
       description: (
-        en: "Reading of technical documentation and listening comprehension in a software context; continuous learning.",
+        en: "Technical documentation reading and listening comprehension in software contexts; continuous learning.",
         es: "Lectura de documentación técnica y comprensión auditiva en contexto de software; aprendizaje continuo.",
       ),
     ),
