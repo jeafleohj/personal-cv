@@ -7,15 +7,11 @@ toolchain to generate the PDFs.
 Generate both PDFs:
 
 ```sh
-nix build
+just build
 ```
 
-Generate a single PDF:
-
-```sh
-nix build .#cv-en-pdf
-nix build .#cv-es-pdf
-```
+The phone number is optional and read from `CV_PHONE`. When the variable is not
+set, the contact line omits it.
 
 Build and copy PDFs to `$HOME/Documents`:
 
