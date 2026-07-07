@@ -32,20 +32,30 @@
   body-indent: 0.45em,
 )
 
+#let join_non_empty(items, separator: [ · ]) = {
+  items.filter(item => item != "").join(separator)
+}
+
 #align(center)[
   #text(size: 15.5pt, weight: "bold")[#personal.name]
   #linebreak()
   #text(size: 10pt)[#tr(personal.tagline)]
   #linebreak()
   #text(size: 8.8pt)[
-    #tr(personal.location) ·
-    #link("mailto:" + personal.email)[#personal.email] ·
-    #personal.phone
+    #join_non_empty(
+      (
+        tr(personal.location),
+        link("mailto:" + personal.email)[#personal.email],
+        personal.phone,
+      ),
+    )
   ]
   #linebreak()
   #text(size: 8.8pt)[
-    #link("https://" + personal.github)[GitHub: jeafleohj] ·
-    #link("https://" + personal.linkedin)[LinkedIn: jhony-angulo-fabian]
+    #join_non_empty((
+      link("https://" + personal.github)[GitHub: jeafleohj],
+      link("https://" + personal.linkedin)[LinkedIn: jhony-angulo-fabian],
+    ))
   ]
 ]
 

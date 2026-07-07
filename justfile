@@ -9,7 +9,9 @@ build:
 [private]
 typst-watch lang:
     mkdir -p dist
-    typst watch src/typst/cv.typ dist/jhonyangulof-{{ lang }}.pdf --input lang={{ lang }}
+    typst watch src/typst/cv.typ dist/jhonyangulof-{{ lang }}.pdf \
+      --input lang={{ lang }} \
+      --input phone="$CV_PHONE"
 
 # Watch the English manual PDF under dist/
 typst-watch-en: (typst-watch "en")
